@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+  <title>Школа Node.js</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form id="myForm" action='server/success.json'>
+    <input type="text" name="fio" placeholder="ФИО">
+    <input type="text" name="email" placeholder="Email">
+    <input type="text" name="phone" placeholder="Номер телефона">
+    <input type="submit" id="submitButton" value="Отправить" onclick="return onSubmitClick()">
+  </form>
+  <div id="resultContainer"></div>
+  <script src="index.js"></script>
+  <script type="text/javascript">
+    window.onload = function() {
+      // var formData = {
+      //   fio: 'Иванов Иван Иванович',
+      //   email: 'test@ya.ru',
+      //   phone: '+7(111)222-33-11'
+      // };
+      // window.MyForm.setData(formData);
+    }
+  </script>
+</body>
+</html>
